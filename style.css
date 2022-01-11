@@ -1,0 +1,169 @@
+/* Common CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+/* Header Area */
+.header-banner img {
+    max-width: 100%;
+}
+header.header {
+    max-width: 100%;
+    position: relative;
+}
+
+.heder-top {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 130px;
+    height: auto;
+}
+
+.main-menu {
+    position: absolute;
+    right: 66px;
+    top: 31px;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    display: inline-block;
+}
+
+/* User Image & Followers */
+.user-img img {
+    width: 192px;
+    height: auto;
+    border-radius: 77px;
+    border: 5px solid #fff;
+}
+
+.profile-image {
+    width: 100%;
+    /* margin-right: 50px; */
+    padding-left: 75px;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+}
+
+.followers {
+    position: absolute;
+    right: 50px;
+    top: 0px;
+}
+
+.followers a {
+    display: inline-block;
+    color: #fff;
+    margin-right: 38px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: transparent;
+    transition: 0.5s;
+}
+
+a.add-friend {
+    background-color: #088dcd;
+    border: 1px solid #088dcd;
+}
+
+.followers a:hover {
+    color: #088dcd;
+}
+
+a.add-friend:hover {
+    display: inline-block;
+    color: #088dcd;
+    background: transparent;
+    border: 1px solid #088dcd;
+}
+
+/* Profile Menu Section */
+section.profile-menu {
+    width: 59%;
+    margin: 0 auto;
+    padding: 12px 0;
+    position: relative;
+}
+
+section.profile-menu nav {
+    display: inline;
+}
+
+/* section.profile-menu nav .profile-name {
+    display: inline-block;
+} */
+.profile-name {
+    font-size: 31px;
+    margin-right: 60px;
+    color: #088dcd;
+    max-width: 35%;
+}
+
+.profile-name span {
+    font-size: 12px;
+    color: #043061;
+    font-weight: 700;
+}
+
+section.profile-menu nav a {
+    display: inline-block;
+    color: #000;
+    font-size: 18px;
+    margin-right: 23px;
+    font-weight: 500;
+}
+
+.profileMenu {
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+/* About Area */
+/* Services Area */
+/* Contact Area */
+/* Blog Area */
+
+/* Footer Top Area */
+.footer-top div {
+    display: inline-block;
+    padding: 40px 44px;
+}
+
+footer {
+    border-top: 4px solid transparent;
+    background: linear-gradient(#fff, #fff),
+        linear-gradient(to right, #fff, #088dcd, #fff);
+    background-origin: padding-box, border-box;
+    background-repeat: no-repeat; /* this is important */
+}
+
+/* Footer Bottom Area */
+.footer-bottom {
+    background-color: #ddd;
+    padding: 20px 40px;
+}
+
+.footer-bottom p {
+    color: #000;
+    font-size: 14px;
+}
