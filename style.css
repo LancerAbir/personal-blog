@@ -11,6 +11,9 @@
     margin: 0 auto;
 }
 
+.mb {
+    margin-bottom: 80px !important;
+}
 /* Header Area */
 .header-banner img {
     max-width: 100%;
@@ -185,6 +188,41 @@ a.active-menu:after {
     background-color: #088dcd;
 }
 /* About Area */
+section.about {
+    display: flex;
+    margin-bottom: -4px;
+}
+
+.about-image img {
+    max-width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.about-image {
+    width: 50%;
+    /* position: relative; */
+    /* height: auto; */
+}
+
+.about-content {
+    width: 50%;
+    display: grid;
+}
+
+.about-image :after {
+    position: absolute;
+    content: "";
+    width: auto;
+    height: auto;
+    background-color: #000;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: block;
+    color: red;
+    font-size: 50px;
+}
 /* Services Area */
 /* Contact Area */
 /* Blog Area */
@@ -216,7 +254,7 @@ footer {
 }
 .download-apps button:hover {
     color: #088dcd;
-    border: 1px px solid;
+    border: 1px solid #088dcd;
 }
 .download-apps i {
     margin-right: 10px;
