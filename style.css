@@ -165,6 +165,25 @@ section.profile-menu nav a:hover {
     right: 0;
     top: 12px;
 }
+
+.active-menu,
+.active {
+    color: #088dcd !important;
+    font-weight: bold;
+}
+.active-menu {
+    position: relative;
+}
+
+a.active-menu:after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 3px;
+    bottom: 0;
+    left: 4px;
+    background-color: #088dcd;
+}
 /* About Area */
 /* Services Area */
 /* Contact Area */
