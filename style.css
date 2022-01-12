@@ -19,6 +19,9 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Stalemate', cursive; */
 }
 
+img {
+    max-width: 100%;
+}
 .section-header h2 {
     font-size: 50px;
     margin: 0 auto;
@@ -471,6 +474,100 @@ input[type="submit"]:hover {
     color: #088dcd;
 }
 /* Blog Area */
+.blog-info {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.bog-image {
+    box-sizing: border-box;
+    width: 70%;
+}
+
+.bog-image img {
+    border-radius: 10px;
+}
+
+.blog-info-content {
+    background-color: #fff;
+    padding: 7px 32px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.blog-content-title h3 {
+    font-size: 20px;
+    font-family: "Stalemate", cursive;
+    margin-bottom: 13px;
+}
+
+.blog-info-box {
+    margin-bottom: 10px;
+    background-color: #ddd;
+    padding: 9px 27px;
+    transition: 0.5s;
+}
+
+.blog-info-box p {
+    line-height: 1.3;
+}
+
+.blog-info-box h4 {
+    color: #808;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+.blog-info-box:hover {
+    background-color: #fff;
+}
+
+.active-blog {
+    background-color: #fff;
+}
+
+.blog-area {
+    display: flex;
+}
+
+.bog-box {
+    padding: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.bog-box img {
+    min-width: 368px;
+    max-height: 176px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-content {
+    line-height: 1.5;
+}
+
+.blog-content button {
+    padding: 9px 18px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin-top: 14px;
+    color: #fff;
+    background-color: #088dcd;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.blog-content button:hover {
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.bog-box:hover {
+    background-color: #fff;
+}
 
 /* Footer Top Area */
 .footer-top div {
