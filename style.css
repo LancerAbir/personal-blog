@@ -7,13 +7,48 @@
     box-sizing: border-box;
 }
 
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Stalemate&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+
+    /* font-family: 'Cookie', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Stalemate', cursive; */
+}
+
+.section-header h2 {
+    font-size: 50px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: "Cookie", cursive;
+    margin-bottom: 50px;
+}
 .m-auto {
     margin: 0 auto;
 }
 
-.mb {
-    margin-bottom: 80px !important;
+.extra-padding {
+    padding: 70px 80px;
 }
+
+.custom-background {
+    background-color: #ddd;
+}
+
+.mb {
+    margin-bottom: 11px !important;
+}
+.mt {
+    margin-top: 120px !important;
+}
+
 /* Header Area */
 .header-banner img {
     max-width: 100%;
@@ -129,7 +164,7 @@ a.add-friend:hover {
 section.profile-menu {
     width: 59%;
     margin: 0 auto;
-    padding: 12px 0;
+    padding: 17px 0;
     position: relative;
 }
 
@@ -145,7 +180,7 @@ section.profile-menu nav {
 }
 
 .profile-name span {
-    font-size: 12px;
+    font-size: 11px;
     color: #043061;
     font-weight: 700;
 }
@@ -197,19 +232,40 @@ section.about {
     max-width: 100%;
     position: relative;
     height: 100%;
+    padding: 0 60px;
 }
 
 .about-image {
     width: 50%;
-    /* position: relative; */
-    /* height: auto; */
 }
 
+h2.about-title {
+    font-size: 50px;
+    font-family: "Cookie", cursive;
+    margin-bottom: 18px;
+    color: #000;
+}
+
+.about-content h3 {
+    font-size: 26px;
+    font-family: "Stalemate", cursive;
+    margin-bottom: 15px;
+}
 .about-content {
     width: 50%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    padding: 0 80px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: darkcyan;
 }
-
+.about-content p {
+    margin-bottom: 20px;
+}
 .about-image :after {
     position: absolute;
     content: "";
@@ -223,14 +279,205 @@ section.about {
     color: red;
     font-size: 50px;
 }
+
 /* Services Area */
+.service-area {
+    display: flex;
+    box-sizing: border-box;
+}
+.service-box {
+    padding: 27px 27px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 8px 9px 16px #0999;
+    margin-bottom: 100px;
+    line-height: 1.5;
+    position: relative;
+    transition: 0.5s;
+}
+
+.active-services .service-title h3 {
+    color: #fff;
+}
+
+.service-box:hover,
+.active-services {
+    background-color: #043061;
+    color: #fff;
+    box-shadow: 8px 9px 16px #000;
+}
+
+.service-box:hover .service-title h3 {
+    color: #fff;
+}
+
+.service-icon {
+    width: 71px;
+    margin: 0 auto;
+    border-radius: 62%;
+    position: absolute;
+    left: 50%;
+    top: -61px;
+    margin-left: -71px;
+}
+
+.service-icon i {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    font-size: 41px;
+    color: #043061;
+    line-height: 2;
+    padding: 13px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 107px;
+    margin-left: -22px;
+}
+
+.service-title h3 {
+    font-size: 20px;
+    margin-top: 37px;
+    font-family: "Stalemate", cursive;
+    color: #043061;
+    margin-bottom: 19px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.service-title h3:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #fff, #088dcd, #fff);
+}
 /* Contact Area */
+.contact-info {
+    display: flex;
+}
+
+.contact-content {
+    box-sizing: border-box;
+    width: 35%;
+    padding: 0 20px;
+    color: darkslategray;
+    line-height: 1.5;
+    position: relative;
+}
+
+.contact-content h3 {
+    font-size: 30px;
+    font-family: "Stalemate", cursive;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-family: "Stalemate", cursive;
+}
+
+.address ul li {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.address ul li a i {
+    font-size: 25px;
+    margin-right: 14px;
+}
+
+.address ul li a {
+    color: #000;
+    display: block;
+}
+
+.address {
+    padding-bottom: 30px;
+}
+
+.social-icon ul li {
+    display: inline-block;
+}
+
+.social-icon ul li a {
+    margin-right: 20px;
+}
+
+.social-icon ul li a i {
+    font-size: 50px;
+    color: darkcyan;
+}
+
+.contact-content:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 3px;
+    height: 243px;
+    content: "";
+    background: linear-gradient(to top, #fff, #088dcd, #fff);
+    background-origin: padding-box, border-box;
+    background-repeat: no-repeat;
+    margin-top: -120px;
+    border-radius: 4px;
+}
+
+.contact-from {
+    padding: 0 70px;
+}
+
+.contact-from form {
+    display: inline-grid;
+}
+
+.contact-from input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 19px 37px;
+    border-radius: 32px;
+    background-color: transparent;
+    transition: 0.3s;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 15px;
+}
+
+.contact-from input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="submit"]:hover {
+    border: 2px solid #088dcd;
+    color: #088dcd;
+}
+
+.contact-from input[type="submit"] {
+    background-color: #088dcd;
+    width: 40%;
+    transition: 0.3s;
+    padding: 19px 37px;
+    border-radius: 32px;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.contact-from input[type="submit"]:hover {
+    background-color: transparent;
+    border: 2px solid #088dcd;
+    color: #088dcd;
+}
 /* Blog Area */
 
 /* Footer Top Area */
 .footer-top div {
     display: inline-block;
     padding: 40px 44px;
+    max-width: 42%;
+    box-sizing: border-box;
 }
 
 footer {
@@ -239,7 +486,7 @@ footer {
         linear-gradient(to right, #fff, #088dcd, #fff);
     background-origin: padding-box, border-box;
     background-repeat: no-repeat; /* this is important */
-    padding: 40px 0;
+    padding-top: 40px;
 }
 
 .download-apps button {
